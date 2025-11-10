@@ -1,0 +1,136 @@
+
+import { Animal, Category, Language } from './types';
+
+export const ANIMALS: Animal[] = [
+  {
+    id: 1,
+    name: { [Language.EN]: 'Cow', [Language.ES]: 'Vaca' },
+    category: Category.FARM,
+    image: 'https://picsum.photos/id/200/500/500',
+    sound: 'moo.mp3',
+    description: {
+      [Language.EN]: 'This is a cow. It lives on the farm and says "Mooo!"',
+      [Language.ES]: 'Esta es una vaca. ¡Vive en la granja y hace "Muuu!"',
+    },
+  },
+  {
+    id: 2,
+    name: { [Language.EN]: 'Pig', [Language.ES]: 'Cerdo' },
+    category: Category.FARM,
+    image: 'https://picsum.photos/id/1084/500/500',
+    sound: 'oink.mp3',
+    description: {
+      [Language.EN]: 'This is a pig. It likes to play in the mud!',
+      [Language.ES]: 'Este es un cerdo. ¡Le gusta jugar en el lodo!',
+    },
+  },
+  {
+    id: 3,
+    name: { [Language.EN]: 'Lion', [Language.ES]: 'León' },
+    category: Category.JUNGLE,
+    image: 'https://picsum.photos/id/1074/500/500',
+    sound: 'roar.mp3',
+    description: {
+      [Language.EN]: 'This is a lion. It is the king of the jungle!',
+      [Language.ES]: 'Este es un león. ¡Es el rey de la selva!',
+    },
+  },
+  {
+    id: 4,
+    name: { [Language.EN]: 'Monkey', [Language.ES]: 'Mono' },
+    category: Category.JUNGLE,
+    image: 'https://picsum.photos/id/1020/500/500',
+    sound: 'chatter.mp3',
+    description: {
+      [Language.EN]: 'This is a monkey. It loves to eat bananas!',
+      [Language.ES]: 'Este es un mono. ¡Le encanta comer plátanos!',
+    },
+  },
+  {
+    id: 5,
+    name: { [Language.EN]: 'Dog', [Language.ES]: 'Perro' },
+    category: Category.PETS,
+    image: 'https://picsum.photos/id/237/500/500',
+    sound: 'bark.mp3',
+    description: {
+      [Language.EN]: 'This is a dog. It is a loyal friend!',
+      [Language.ES]: 'Este es un perro. ¡Es un amigo leal!',
+    },
+  },
+  {
+    id: 6,
+    name: { [Language.EN]: 'Cat', [Language.ES]: 'Gato' },
+    category: Category.PETS,
+    image: 'https://picsum.photos/id/106/500/500',
+    sound: 'meow.mp3',
+    description: {
+      [Language.EN]: 'This is a cat. It likes to purr when it is happy.',
+      [Language.ES]: 'Este es un gato. Le gusta ronronear cuando está feliz.',
+    },
+  },
+    {
+    id: 7,
+    name: { [Language.EN]: 'Fish', [Language.ES]: 'Pez' },
+    category: Category.AQUATIC,
+    image: 'https://picsum.photos/id/21/500/500',
+    sound: 'blub.mp3',
+    description: {
+      [Language.EN]: 'This is a fish. It swims in the water.',
+      [Language.ES]: 'Este es un pez. Nada en el agua.',
+    },
+  },
+  {
+    id: 8,
+    name: { [Language.EN]: 'Dolphin', [Language.ES]: 'Delfín' },
+    category: Category.AQUATIC,
+    image: 'https://picsum.photos/id/40/500/500',
+    sound: 'click.mp3',
+    description: {
+      [Language.EN]: 'This is a dolphin. It is very smart and playful!',
+      [Language.ES]: 'Este es un delfín. ¡Es muy inteligente y juguetón!',
+    },
+  },
+];
+
+export const translations = {
+  [Language.EN]: {
+    play: 'Play',
+    learn: 'Learn',
+    sounds: 'Sounds',
+    settings: 'Settings',
+    difficulty: 'Difficulty',
+    easy: 'Easy',
+    medium: 'Medium',
+    hard: 'Hard',
+    language: 'Language',
+    selectAPuzzle: 'Select a Puzzle!',
+    farm: 'Farm',
+    jungle: 'Jungle',
+    pets: 'Pets',
+    aquatic: 'Aquatic',
+    wellDone: 'Well Done!',
+    youDidIt: 'You did it!',
+    playAgain: 'Play Again',
+    backToMenu: 'Main Menu',
+  },
+  [Language.ES]: {
+    play: 'Jugar',
+    learn: 'Aprender',
+    sounds: 'Sonidos',
+    settings: 'Ajustes',
+    difficulty: 'Dificultad',
+    easy: 'Fácil',
+    medium: 'Medio',
+    hard: 'Difícil',
+    language: 'Idioma',
+    selectAPuzzle: '¡Elige un Puzzle!',
+    farm: 'Granja',
+    jungle: 'Selva',
+    pets: 'Mascotas',
+    aquatic: 'Acuáticos',
+    wellDone: '¡Muy Bien!',
+    youDidIt: '¡Lo lograste!',
+    playAgain: 'Jugar de Nuevo',
+    backToMenu: 'Menú Principal',
+  },
+};
